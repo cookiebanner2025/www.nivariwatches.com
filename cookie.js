@@ -57,7 +57,7 @@ const config = {
     allowedDomains: [],
     
     // Privacy policy URL (configurable)
-    privacyPolicyUrl: 'https://www.nivariwatches.com/#privacy-policy', // Add your full privacy policy URL here
+    privacyPolicyUrl: 'https://yourdomain.com/privacy-policy', // Add your full privacy policy URL here
     
     // Microsoft UET Configuration
     uetConfig: {
@@ -186,13 +186,13 @@ geoConfig: {
         transition: 'all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1)',
         
        accept: {
-    background: '#3abfff !important',
+    background: '#FFD0D0 !important',
     color: '#000000 !important',
     // border: '1px solid #08dafd !important',
     hover: {
-        background: '#3abfff !important',
+        background: '#FFD0D0 !important',
         color: '#000000 !important',
-      //  transform: 'translateY(-1px) !important'//
+        transform: 'translateY(-1px) !important'
     }
         },
         
@@ -200,7 +200,6 @@ geoConfig: {
             background: '#ffffff',
             color: '#333333',
             border: '1px solid #0000001f',
-            display: none;
             hover: {
                 background: '#ffffff',
                 color: '#333333',
@@ -502,11 +501,11 @@ const cookieDatabase = {
 const translations = {
     en: {
         title: "We value your privacy",
-        description: "We use cookies to improve your browsing experience, provide personalized ads or content, and analyze our traffic. By clicking \"Ok,\" you consent to the use of cookies.",
+        description: "We use cookies to improve your browsing experience, provide personalized ads or content, and analyze our traffic. By clicking \"Accept All,\" you consent to the use of cookies.",
         privacy: "Privacy Policy",
         customize: "Adjust",
         reject: "Reject all",
-        accept: "Ok",
+        accept: "Accept all",
         essential: "Essential Cookies",
         essentialDesc: "Necessary for website functionality",
         analytics: "Analytics Cookies",
