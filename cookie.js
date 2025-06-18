@@ -240,7 +240,7 @@ geoConfig: {
         borderRadius: '50%',
         boxShadow: '0 6px 20px rgba(0, 0, 0, 0.2)',
         hover: {
-            background: '#FFD0D0',
+            background: '#8ed7f9',
             transform: 'translateY(-3px) scale(1.05)',
             boxShadow: '0 8px 25px rgba(0, 0, 0, 0.3)'
         }
@@ -2611,7 +2611,7 @@ function injectConsentHTML(detectedCookies, language = 'en') {
         fill: ${config.floatingButtonStyle.iconColor} !important;
         stroke: none;
         transition: transform 0.3s ease;
-        margin-top: 0px; 
+        margin-top: -4px; 
     }
     .cookie-settings-button:hover svg {
         transform: rotate(15deg);
