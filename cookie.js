@@ -2611,7 +2611,7 @@ function injectConsentHTML(detectedCookies, language = 'en') {
         fill: ${config.floatingButtonStyle.iconColor} !important;
         stroke: none;
         transition: transform 0.3s ease;
-        margin-top: -4px; 
+        margin-top: 0px; 
     }
     .cookie-settings-button:hover svg {
         transform: rotate(15deg);
