@@ -2196,6 +2196,7 @@ function injectConsentHTML(detectedCookies, language = 'en') {
         background-color: ${config.buttonStyle.reject.background};
         color: ${config.buttonStyle.reject.color};
         border: ${config.buttonStyle.reject.border};
+        display: none;
         
     }
 
