@@ -197,11 +197,10 @@ geoConfig: {
         },
         
         reject: {
-          
             background: '#ffffff',
             color: '#333333',
             border: '1px solid #0000001f',
-            display: none,
+          
             hover: {
                 background: '#ffffff',
                 color: '#333333',
@@ -2197,6 +2196,7 @@ function injectConsentHTML(detectedCookies, language = 'en') {
         background-color: ${config.buttonStyle.reject.background};
         color: ${config.buttonStyle.reject.color};
         border: ${config.buttonStyle.reject.border};
+          display: none;
     }
 
     .main-reject-btn:hover {
