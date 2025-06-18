@@ -186,11 +186,11 @@ geoConfig: {
         transition: 'all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1)',
         
        accept: {
-    background: '#FFD0D0 !important',
+    background: '#8ed7f9 !important',
     color: '#000000 !important',
     // border: '1px solid #08dafd !important',
     hover: {
-        background: '#FFD0D0 !important',
+        background: '#8ed7f9 !important',
         color: '#000000 !important',
         transform: 'translateY(-1px) !important'
     }
@@ -502,11 +502,11 @@ const cookieDatabase = {
 const translations = {
     en: {
         title: "We value your privacy",
-        description: "We use cookies to improve your browsing experience, provide personalized ads or content, and analyze our traffic. By clicking \"Accept All,\" you consent to the use of cookies.",
+        description: "We use cookies to improve your browsing experience, provide personalized ads or content, and analyze our traffic. By clicking \"Ok,\" you consent to the use of cookies.",
         privacy: "Privacy Policy",
         customize: "Adjust",
         reject: "Reject all",
-        accept: "Accept all",
+        accept: "Ok",
         essential: "Essential Cookies",
         essentialDesc: "Necessary for website functionality",
         analytics: "Analytics Cookies",
@@ -2211,14 +2211,14 @@ function injectConsentHTML(detectedCookies, language = 'en') {
     background-color: ${config.buttonStyle.accept.background};
     color: ${config.buttonStyle.accept.color};
     border: ${config.buttonStyle.accept.border};
-    box-shadow: 0 2px 12px rgba(46, 204, 113, 0.3);
+    
 }
 
 .main-accept-button:hover {
     background-color: ${config.buttonStyle.accept.hover.background};
     color: ${config.buttonStyle.accept.hover.color};
     transform: ${config.buttonStyle.accept.hover.transform};
-    box-shadow: 0 4px 16px rgba(46, 204, 113, 0.4);
+  
 }
 
     .main-save-btn {
