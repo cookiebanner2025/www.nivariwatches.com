@@ -75,7 +75,7 @@ const config = {
         rememberLanguage: true,
         acceptOnScroll: false,
         acceptOnContinue: false,
-        showFloatingButton: true,
+        showFloatingButton: false,
         showAdminButton: false,
         floatingButtonPosition: 'left',
         adminButtonPosition: 'left',
@@ -2139,7 +2139,7 @@ function injectConsentHTML(detectedCookies, language = 'en') {
     }
 
     .main-cookie-consent-content p {
-        margin: 0 0 10px 0;
+        margin: 0 0 21px 0;
         font-size: ${config.bannerStyle.description.fontSize};
         color: ${config.bannerStyle.description.color};
         line-height: ${config.bannerStyle.description.lineHeight};
@@ -2153,6 +2153,7 @@ function injectConsentHTML(detectedCookies, language = 'en') {
         display: inline-block;
         margin-bottom: 8px;
         transition: color 0.2s ease;
+        display: none;
     }
 
     .main-privacy-policy-link:hover {
@@ -3013,7 +3014,7 @@ function injectConsentHTML(detectedCookies, language = 'en') {
             padding: 15px;
             flex-direction: column;
             width: calc(100% - 30px);
-            ${config.behavior.bannerPosition === 'left' ? 'left: 15px;' : 'right: 15px;'}
+            ${config.behavior.bannerPosition === 'left' ? 'left: 0px;' : 'right: 15px;'}
         }
         
         .main-cookie-consent-content h2 {
