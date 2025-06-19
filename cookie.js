@@ -71,7 +71,8 @@ const config = {
     // Behavior configuration
     behavior: {
         autoShow: true,
-        bannerDelay: 10,
+        bannerDelay: 3, // Desktop delay (seconds)
+        bannerDelayMobile: 6, // Mobile delay (seconds) - add this line
         rememberLanguage: true,
         acceptOnScroll: false,
         acceptOnContinue: false,
@@ -3157,9 +3158,15 @@ function initializeCookieConsent(detectedCookies, language) {
     const bannerShouldBeShown = geoAllowed && shouldShowBanner();
     
     if (!consentGiven && config.behavior.autoShow && bannerShouldBeShown) {
+        // Detect if mobile device
+        const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+        
+        // Use mobile delay if mobile, otherwise use desktop delay
+        const delay = isMobile ? config.behavior.bannerDelayMobile : config.behavior.bannerDelay;
+        
         setTimeout(() => {
             showCookieBanner();
-        }, config.behavior.bannerDelay * 1000);
+        }, delay * 1000);
     } else if (consentGiven) {
         const consentData = JSON.parse(consentGiven);
         updateConsentMode(consentData);
