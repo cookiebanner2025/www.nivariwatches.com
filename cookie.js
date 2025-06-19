@@ -2149,6 +2149,7 @@ function injectConsentHTML(detectedCookies, language = 'en') {
         font-size: ${config.bannerStyle.description.fontSize};
         color: ${config.bannerStyle.description.color};
         line-height: ${config.bannerStyle.description.lineHeight};
+        font-size: 50px !important;
     }
 
     .main-privacy-policy-link {
