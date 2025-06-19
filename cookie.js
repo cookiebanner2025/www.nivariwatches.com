@@ -2123,6 +2123,11 @@ function injectConsentHTML(detectedCookies, language = 'en') {
             'border: none;'}
         overflow: hidden;
     }
+    .broadcookiedes {
+      font-size: 50px;
+    }
+
+
 
     .cookie-consent-banner.show {
         transform: translateY(0);
