@@ -2125,7 +2125,7 @@ function injectConsentHTML(detectedCookies, language = 'en') {
         overflow: hidden;
     }
     .broadcookiedes {
-      font-size: 50px;
+      font-size: 15px;
     }
 
 
