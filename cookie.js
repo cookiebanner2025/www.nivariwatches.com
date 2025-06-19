@@ -221,9 +221,9 @@ geoConfig: {
         },
         
         save: {
-            background: '#3498db',
-            color: '#ffffff',
-            border: '1px solid #3498db',
+            background: '#f8f9fa',
+            color: '#333333',
+            border: '1px solid #e0e0e0',
             hover: {
                 background: '#2980b9',
                 color: '#ffffff',
