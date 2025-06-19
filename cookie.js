@@ -171,11 +171,11 @@ geoConfig: {
             fontWeight: '600',
             color: '#2c3e50'
         },
-        description: {
-            fontSize: '14px',
-            lineHeight: '1.5',
-            color: '#7f8c8d'
-        }
+       description: {
+    fontSize: '14px !important',
+    lineHeight: '1.5 !important',
+    color: '#7f8c8d !important'
+}
     },
     
     // Button styling
