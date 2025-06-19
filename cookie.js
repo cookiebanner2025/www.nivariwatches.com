@@ -1986,7 +1986,8 @@ function injectConsentHTML(detectedCookies, language = 'en') {
                     <span class="toggle-slider"></span>
                 </label>
             </div>
-            <p>${lang[`${categoryKey}Desc`]}</p>
+            <p class="broadcookiedes">${lang[`${categoryKey}Desc`]}</p>
+
             <div class="cookie-details-container">
                 <div class="cookie-details-header">
                     <span>Cookie Details</span>
@@ -2149,7 +2150,7 @@ function injectConsentHTML(detectedCookies, language = 'en') {
         font-size: ${config.bannerStyle.description.fontSize};
         color: ${config.bannerStyle.description.color};
         line-height: ${config.bannerStyle.description.lineHeight};
-        font-size: 50px !important;
+       
     }
 
     .main-privacy-policy-link {
