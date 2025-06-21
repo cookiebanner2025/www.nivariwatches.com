@@ -72,7 +72,7 @@ const config = {
     behavior: {
         autoShow: true,
         bannerDelay: 3, // Desktop delay (seconds)
-        bannerDelayMobile: 6, // Mobile delay (seconds) - add this line
+        bannerDelayMobile: 3, // Mobile delay (seconds) - add this line
         rememberLanguage: true,
         acceptOnScroll: false,
         acceptOnContinue: false,
